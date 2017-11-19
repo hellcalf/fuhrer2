@@ -1,0 +1,95 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.check{
+    color: green;
+}
+.uncheck{
+    color:red;
+    width: 280px;
+    height: 35px;
+}
+
+body{
+   /* background-image: url("imagenes/c3.png");*/
+    background-color: rgba(61, 163, 146, 0.705);
+    background-position: center;
+    margin:0px;
+    padding:0px;
+}
+
+
+form {
+    width: 360px;
+    height: 600;
+    box-shadow: insert 0 0 10px #484B4D;
+    margin:20px auto;
+}
+
+form h1{
+    text-align: center;
+    color:#fff;
+    font-weight: normal;
+    font-size:40pt;
+    margin:30px 0px;
+    font-family: 'Lobster', cursive;
+}
+
+
+.desplazada{
+    position: relative;
+    left:-7cm;
+    top:0cm;
+    width: 280px;
+    height: 35px;
+    margin:10px 30px;
+    color:#0F0F0F;
+    text-align: center;
+} 
+.desplazada2{
+    position: relative;
+    left:-7cm;
+    top:0cm;
+    width: 280px;
+    height: 35px;
+    padding:0px 10px;
+    margin:10px 30px;
+    color:#0F0F0F;
+    text-align: center;
+} 
+.desplazadar{
+    position: relative;
+    left:-7.5cm;
+    top:0.4cm;
+    margin:0px 60px;
+    
+} 
+
+.desplazal{
+    position: relative;
+    left:-6.5cm;
+    top:-0.45cm;
+    margin:10px 40px;
+    color:#0F0F0F;
+}
+
+/*form button{
+    width: 135px;
+    margin:20px 0px 30px 30px;
+    height: 50px;
+
+background: #93cede; Old browsers 
+background: linear-gradient(to bottom, #93cede 3%,#75bdd1 48%,#49a5bf 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf',GradientType=0 ); IE6-9 
+   border:1px solid #06EBFC;
+   color:#fff;
+   box-shadow:0px 2px 0px #000;
+   border-radius:3px;
+   }
+   
+   form button:hover{
+       background: #4CE7FC;
+   }*/
+   

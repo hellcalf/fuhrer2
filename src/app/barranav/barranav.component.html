@@ -1,0 +1,84 @@
+<div class="container-full">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   
+  <!-- Nav -->
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container margin-left-nav">
+      <div class="container margen2">
+        <div class="col-md-2 ">
+          <!-- Navbar Fuhrer -->
+          <div class="navbar-header">
+            <a class="navbar-brand">Fuhrer Office</a>
+          </div>
+        </div>
+        <div class="col-md-9 margen2">
+          <div class="margen2" id="navbar-main">
+
+            <!-- Navbar botones -->
+            <form class="navbar-form navbar-left" role="search" routerLinkActive="active">
+              <button type="button" routerLink="/ingresar/enviarmensaje" class="btn btn-default color-btn navbar-btn"><span class="fa fa-pencil-square-o" aria-hidden="true"></span></button>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Que desea buscar?">
+              </div>
+              
+              <button type="button" class="btn btn-default color-btn navbar-btn"><span class="fa fa-search" aria-hidden="true"></span></button>
+              
+            </form>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <div class="profile-bienvenido">Bienvenido!</div>
+                  </div> 
+                  <div class="form-group profile-userpic">
+                      <img src="../assets/fh.png" class="img-responsive" alt="foto">
+                    </div>
+                    
+                    <div class="cerrar" *ngIf="isAuth()">
+                        <button class="btn btn-primary color-btn2 navbar-btn" (click)="onLogout()">Cerrar Sesión</button>
+                      </div>                    
+            </form>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<section class="container-full">
+
+  <!-- Main page -->
+  <div class="row" id="full-page">
+
+    <!-- Sidebar -->
+    <div class="col-md-2">
+      <div class="profile-sidebar">
+          <nav class="profile-menu">
+            
+              <ul class="nav nav-pills nav-stacked margen"> <!--nav navbar2 vertical-->
+                <li>
+                  <a routerLink="/ingresar/bandejadeentrada" class="colorle"><i class="glyphicon glyphicon-inbox colorle"></i> Inbox</a>
+                </li>
+                <li>
+                  <a routerLink="/ingresar/plantillas"  class="colorle"><i class="glyphicon glyphicon-file colorle"></i> Plantillas</a>
+                </li>
+                <li>
+                  <a class="colorle"><i class="glyphicon glyphicon-erase colorle"></i> Borradores</a>
+                </li>
+                <li>
+                  <a class="colorle"><i class="glyphicon glyphicon-envelope colorle"></i> Enviados</a>
+                </li>
+              </ul>
+            </nav>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mover">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>
+
+

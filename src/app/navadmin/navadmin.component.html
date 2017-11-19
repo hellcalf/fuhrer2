@@ -1,0 +1,70 @@
+<div class="container-full">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   
+  <!-- Nav -->
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container margin-left-nav">
+      <div class="container margen2">
+        <div class="col-md-2 ">
+          <!-- Navbar Fuhrer -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Fuhrer Office</a>
+          </div>
+        </div>
+        <div class="col-md-9 margen2">
+          <div class="margen2" id="navbar-main">
+
+            <!-- Navbar botones -->
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <div class="profile-bienvenido">Bienvenido Administrador!</div>
+                  </div> 
+                  <div class="form-group profile-userpic">
+                      <img src="../assets/fh.png" class="img-responsive" alt="foto">
+                    </div>
+                    
+                                        
+            </form>
+            <div class="cerrar">
+                <button type="submit" class="btn btn-default color-btn2 navbar-btn" routerLink="/ingresar/enviarmensaje">Cerrar Sesión</button>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<section class="container-full">
+
+  <!-- Main page -->
+  <div class="row" id="full-page">
+
+    <!-- Sidebar -->
+    <div class="col-md-2">
+      <div class="profile-sidebar">
+          <nav class="profile-menu">
+            
+              <ul class="nav nav-pills nav-stacked margen"> <!--nav navbar2 vertical-->
+                <li>
+                  <a routerLink="/administrador/agregarusuarios" class="colorle"><i class="glyphicon glyphicon-file colorle" ></i> Agregar Usuarios</a>
+                </li>
+                <li>
+                  <a  class="colorle"><i class="glyphicon glyphicon-erase colorle"></i> Editar Usuarios</a>
+                </li>
+                <li>
+                  <a  class="colorle"><i class="glyphicon glyphicon-envelope colorle"></i> Enviados</a>
+                </li>
+              </ul>
+            </nav>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mover">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>

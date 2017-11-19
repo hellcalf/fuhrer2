@@ -1,0 +1,52 @@
+.navbar{
+    height: 60px;
+    width: 499px;
+}
+
+.color-btn{
+    background-color: rgb(36, 184, 243);
+    color:white;
+    border: none;
+    position: relative;
+    left:10cm;
+    top:-0.2cm;
+
+}
+modalposition{
+    height: 70px;
+    width: 500px;
+    
+   }
+.navtool{
+    background-color: rgb(77, 124, 243);
+    margin-top: 1px !important;
+    margin-left: -15px !important;
+}
+.color-btn:hover {
+	background-color: rgb(92, 156, 151);
+	border-color: black;
+   }
+.color-btn1{
+    background-color: rgb(77, 124, 243);
+    color:white;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.color-btn1:hover {
+	background-color: rgb(92, 156, 151);
+	border-color: black;
+   }
+.color-btn1:active {
+	border-color:1px solid black;
+   }
+
+
+navbari{
+    background: rgb(5, 37, 49);
+}
+textarea {
+    resize: none;
+    height: 180px;
+ }

@@ -1,0 +1,138 @@
+.check{
+    color: rgb(2, 53, 2);
+}
+.uncheck{
+    color:rgb(70, 2, 2);
+    width: 280px;
+    height: 35px;
+}
+.bonito{
+   
+    width: 580px;
+    height: 520px;
+}
+.let{
+    font-size: 24px;
+}
+.color-btn2{
+	background-color: rgb(15, 124, 128);
+	color: white;
+	font-size: 14px;
+	border: none;
+    padding-left: 10px;
+
+}
+.color-btn2:hover {
+	background-color: rgb(10, 68, 64);
+	border-color: black;
+   }
+.letra{
+    color: rgb(7, 7, 7);
+    font-size: 40px;
+    font-weight: normal;
+    margin-top:30px;
+    text-align: center !important;
+    position: relative;
+    left: 3cm;
+    top: 0cm;
+}
+label{
+    color: black !important;
+}
+
+
+.normal{
+    font-weight: normal;
+    font-size: 12pt;
+
+}
+.a{
+    position: relative;
+    left: 0.5cm;
+    top: 0.1cm;
+}
+.b{
+    position: relative;
+    left: 0.5cm;
+    top: 0.3cm;
+    text-align: center !important;
+    width: 300px;
+}
+.c{
+    position: relative;
+    left: 0.5cm;
+    top: 0.3cm;
+}
+.d{
+    position: relative;
+    left: -0.5cm;
+    top: 1cm;
+}
+.e{
+    position: relative;
+    left: 3cm;
+    top: 1cm;
+}
+.f{
+    position: relative;
+    left: -0.8cm;
+    top: 1cm;
+}
+.g{
+    position: relative;
+    left: 1.5cm;
+    top: 1cm;
+}
+.h{
+    position: relative;
+    left: 0.5cm;
+    top: 1cm;
+}
+.i{
+    position: relative;
+    left: 0.5cm;
+    top: 1.2cm;
+    text-align: center !important;
+    width: 300px;
+}
+.j{
+    position: relative;
+    left: 0.5cm;
+    top: 1cm;
+}
+.k{
+    position: relative;
+    left: 0.5cm;
+    top: 1cm;
+    width: 300px;
+    text-align: center !important;
+}
+.l{
+    position: relative;
+    left: 0.5cm;
+    top: 1cm;
+}
+.m{
+    position: relative;
+    left: 0.5cm;
+    top: 1cm;
+    width: 300px;
+    text-align: center !important;
+}
+.n{
+    position: absolute;
+    left:11cm;
+    top: 12cm;
+}
+.x{
+    position: absolute;
+    left: 9cm;
+    top: 7.5cm;
+    width: 200px;
+}
+.y{
+    position: absolute;
+    left: 9cm;
+    top: 10cm;
+    width: 200px;
+}

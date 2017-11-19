@@ -1,0 +1,30 @@
+<div class="row col-xs-16 col-ms-16 col-sm-10">
+  <body>
+      <form class="form-group"> 
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+      <div id="testdiv" class="modal-header">
+
+        <h4 class="modal-title">Registrar Usuarios</h4>
+    </div>
+      <input type="text" class="desplazada" maxlength="15" placeholder="User Name"/>
+      
+      <input type="radio" name="group1" class="desplazadar" value="Persona">
+      <input type="radio" name="group1" class="desplazadar" value="Dependencia"  checked>
+      <label for="other" class="desplazal">Persona</label>
+      <label for="other" class="desplazal">Dependencia</label>
+      <input type="text" maxlength="25" class="desplazada2" placeholder="Nombre Dependencia"/>
+      <input type="password" class="desplazada2" maxlength="15" placeholder="Password">
+     <div class="form-group">
+      <label for="email">Correo electronico</label>
+      <i class"fa fa-check-circle check" *ngIf="email.valid">
+      <i class"fa fa-exclamation-circle uncheck" *ngIf="email.invalid && email.touched">
+      <input type="text"  class="form-control desplazada2"  id="email" ngModel name="email" 
+      required email #email="ngModel" maxlength="35" placeholder="Email">
+      <p class="alert alert-danger" *ngIf="email.invalid && email.touched">Introduzca una dirección de correo valida.</p>
+    </div>
+      <button type="sumit" class="btn btn-success" >Registrar</button>
+     
+      </form>
+      
+  </body>
+</div>

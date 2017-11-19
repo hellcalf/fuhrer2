@@ -1,0 +1,118 @@
+
+.cambiar{
+    width: 700px;
+    height: 530px;
+}
+
+.logo{
+    position: relative;
+    left:0.1cm;
+    top: 0.1cm;
+}
+.change{
+    position: relative;
+    left:0.5cm;
+    top: 0.3cm;
+}
+.encabezado textarea{
+    position: relative;
+    left:0cm;
+    top: 0.1cm;
+    resize: none;
+    height: 70px;
+}
+
+.encabezado label{
+    position: relative;
+    left:0cm;
+    top: 0.2cm;
+}
+
+.destinatario textarea{
+    position: relative;
+    left:0cm;
+    top:0cm;
+    resize: none;
+    height: 70px;
+}
+
+.destinatario label{
+    position: relative;
+    left:0cm;
+    top: 0.1cm;
+}
+
+.contenido textarea{
+    position: relative;
+    left:0cm;
+    top: -0.1cm;
+    resize: none;
+    height:80px;
+}
+
+.contenido label{
+    position: relative;
+    left:0cm;
+    top: 0cm;
+}
+.despedida textarea{
+    position: relative;
+
+    left:0cm;
+    top: -0.2cm;
+    resize: none;
+}
+
+.despedida label{
+    position: relative;
+    left:0cm;
+    top: -0.1cm;
+}
+
+
+.color-btn{
+    float: right;
+    color:white !important;
+    border: none;
+
+}
+.hola{
+    margin-left: 15px;
+}
+modalposition{
+    height: 70px;
+    width: 500px;
+   }
+.navtool{
+    background-color: rgb(45, 70, 68);
+    margin-top: 1px !important;
+    margin-left: -15px !important;
+}
+.color-btn:hover {
+	background-color: rgb(92, 156, 151);
+	
+   }
+.color-btn1{
+    background-color: rgb(7, 105, 151);
+    color:white;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.color-btn1:hover {
+	background-color: rgb(92, 156, 151);
+	border-color: #07629E;
+   }
+.color-btn1:active {
+	border-color:1px solid #0F7081;
+   }
+
+
+navbari{
+    background: rgb(6, 80, 107);
+}
+/*textarea {
+    resize: none;
+    height: 200px;
+ }*/

@@ -1,0 +1,22 @@
+
+<div class="row col-xs-18 col-ms-18 col-sm-10 hola">
+  <h3>Bandeja de entrada</h3>
+  <table class="table  tabled-striped tabla" >
+    <thead>
+      <tr class="filters">
+        <th>Remitente</th>
+        
+        <th>Mensaje</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let envio of envios" >
+        <td> {{envio.id_usuario_remi}} </td>
+        <td>{{envio.mensaje}}</td>
+        <td>{{envio.fecha}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

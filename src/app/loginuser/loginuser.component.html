@@ -1,0 +1,25 @@
+<div style="text-align:center" class="container-full">
+  <body>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+  
+      <img width="183"  src= "../assets/fh.png">
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">      
+      <h1>LOGIN</h1>
+      
+      <div class="campos">
+            <input type="text" maxlength="35" placeholder="Correo" formControlName="email"  required autofocus/> 
+            <input type="password" maxlength="15" placeholder="Contraseña" formControlName="password" required />       
+      </div>
+      
+      
+      
+      <div class="checkbox">
+          <input type="checkbox" value="remember-me">
+          <label for="other">Remember Me</label>
+       </div>
+     
+       <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" >Iniciar sesión</button>
+      </form>
+      <p class="alert alert-danger" *ngIf="mensaje">El usuario o contraseña no es correcto</p>
+  </body>
+  </div> 

@@ -1,0 +1,195 @@
+.navbar {
+	margin-top: 1px;
+	margin-bottom: 0px !important;
+	color: white !important;
+	height: 70px;
+}
+
+.mar-left {
+	margin-left: -15px !important;
+	color: white !important;
+}
+
+ul.navbar-right {
+	margin-right: 0px !important;
+}
+
+.navbar-nav>li>a {
+	padding-left: 20px;
+	padding-right: 25px;
+}
+
+.row {
+	margin-left: -15px !important;
+	
+	
+}
+
+.margin-left-nav {
+	margin-left: 0 !important;
+	color: rgb(255, 255, 255);
+	height: 70px;
+}
+.margen2{
+	height: 70px;
+}
+
+.navbar .nav>li.dropdown.open.active>a:hover,
+.navbar .nav>li.dropdown.open>a,
+li a:hover,
+li.active>a {
+	color: white !important;
+	background-color: rgb(38, 50, 156) !important;
+}
+
+li a:hover {
+	background-color: rgb(109, 123, 243) !important;
+	color: #ffffff !important;
+}
+
+li.active>a {
+	background-color: rgb(109, 123, 243) !important;
+	color: #ffffff !important;
+}
+.colorle{
+	color: black !important;
+}
+
+.navbar-nav{
+	background:  rgb(61, 70, 71);
+	color: white !important;
+	
+}
+
+.navbar{
+	background: linear-gradient(to right, rgb(74, 113, 221), rgb(121, 238, 247));
+	border-bottom: 1px solid white;
+	color: white !important;
+	
+}
+.navbar2{
+	background:  rgb(216, 221, 221);
+    color: white !important;
+	
+}
+.navbar-brand{
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+	padding-top: 20px;
+	color: white;
+	
+}
+.navbar-brand:hover {
+	color: rgb(199, 197, 197) !important;
+	
+}
+
+ul.horizontal li {
+	border-left: 25px solid rgb(16, 17, 17);
+}
+
+ul.horizontal li:last-child {
+	border-right: 25px solid rgb(16, 17, 17);
+}
+
+
+.border {
+	border: 1px solid white;
+}
+
+
+/*----- Sidebar -----*/
+
+.profile-sidebar {
+	background-color: rgba(215, 219, 219, 0.76);
+	height: 89vh;
+	border-right: 2px solid white;
+	/*margin-top: -34px !important;*/
+}
+
+
+.profile-userpic img {
+	margin: 0 auto;
+	width: 1cm;
+    height: 1cm;
+    position: relative;
+    left:-27cm;
+    top:0.1cm;
+}
+
+.profile-bienvenido {
+	color: white;
+	font-family: 'lobster', cursive;
+	font-size: 20px;
+	padding-top: 12px;
+	
+}
+.margen{/*MARGEN PARA BAJAR EL AREA DE SELECCION DEL BOTON, AREA NAVBAR*/
+	padding-top: 15px;
+}
+
+.profile-menu ul li a {
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 30px;
+	border-bottom: 1px solid rgb(99, 113, 247);
+	border-top: 1px solid rgb(99, 113, 247);
+	border-left: 10px solid rgb(99, 113, 247);
+	border-right: 1px solid rgb(99, 113, 247);
+	
+}
+
+ul.vertical li:first-child {
+	border-top: 1px solid rgb(92, 156, 151);
+}
+
+
+/*----- End Sidebar -----*/
+
+#full-page {
+	background-color: white;
+	width: 90vw;
+	
+}
+
+#header-content {
+	height: 30vh;
+	
+}
+
+.lma-content {
+	height: 30vh;
+}
+.color-btn{
+	background-color: rgb(99, 113, 247);
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	border: none;
+	padding-right: 15px;
+}
+.color-btn:hover {
+	background-color: rgb(62, 144, 211);
+	border-color: black;
+   }
+.color-btn2{
+	background-color: rgb(118, 215, 240);
+	color: white;
+	font-size: 14px;
+	border: none;
+	padding-left: 10px;
+}
+.color-btn2:hover {
+	background-color: rgb(49, 113, 209);
+	border-color: black;
+   }
+.cerrar{
+position: relative;
+left:8cm;
+top:-1cm;
+
+}
+
+.mover{
+	margin-left: 200px;
+}

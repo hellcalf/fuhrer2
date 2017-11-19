@@ -1,0 +1,48 @@
+<div class= "modal-dialog row ">
+  
+<div class= "modal-content col-xs-16 col-ms-16 col-sm-10 cambiar">
+  <div id="testdiv" class="modal-header">
+      <button type="button" class="close" routerLink="/ingresar">x</button>
+      <h4 class="modal-title">Plantilla</h4>
+  </div>
+
+  <div >
+    <label class="logo">Logo:</label>
+    <p-fileUpload class="change"mode="basic" accept="image/*" name="myfile[]" url="./upload.php"></p-fileUpload>
+  </div>
+ <div class="encabezado">
+   <label>Encabezado:</label>
+  <textarea id="encabezado" name="encabezado" value="" class="form-control "  placeholder="Universidad De Machala 
+Provincia de el oro republica del ecuador
+RECORDATORIO"></textarea>
+  </div>
+  <div class="destinatario">
+     <label>Destinatario:</label>
+     <textarea id="destinatario" name="destinatario" value="" class="form-control " placeholder="Ingeniero 
+GABIREL GARCIA TORRES 
+Secretario General UTPL"></textarea>
+   </div>
+  <div class="contenido">
+      <label>Contenido:</label>
+      <textarea class="form-control" type="text" id="contenido" name="contenido" value="" placeholder="Se le comunica con la presente que se ha vendido un total 
+de 300 conos de hilo.
+Esperamos que sean entregados en tiempo y forma en el transcurso de la semana."></textarea>
+    </div>
+  
+    <div class="despedida">
+        <label>Despedida:</label>
+        <textarea type="text" id="despedida" name="despedida" value="" class="form-control " placeholder="Agradezco la gentileza de su atencion."></textarea>
+    </div>
+  <div>
+  <button type="button" (click)="downloadPDF()" class="btn btn-success color-btn hola">Guardar</button>
+  <button type="button" class="btn btn-danger color-btn">Descartar</button>
+  </div>
+  <!--  <div class="Firma">
+      <label>Firma:</label>
+      <textarea class="form-control " placeholder="Firma"></textarea>
+  </div>-->
+ 
+
+</div>
+
+</div>
