@@ -3,11 +3,9 @@ var db=require('../dbconnection');
 var Usuarios={
 
 
-addUsuarios:function(Task,callback){
+addUsuarios:function(Usuarios,callback){
     console.log("inside service");
-    console.log(Task.Id);
-return db.query("Insert into task values(?,?,?)",[Task.Id,Task.Title,Task.Status],callback);
-return db.query("insert into task(Id,Title,Status) values(?,?,?)",[Task1.Id,Task1.Title,Task1.Status],callback);
+return db.query("Insert into usuarios values(?,?,?)",[Usuarios.tipo_usuario,Usuarios.nombre,Usuarios.contraseña],callback);
 },
 }
 module.exports=Usuarios;

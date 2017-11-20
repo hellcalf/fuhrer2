@@ -18,6 +18,7 @@ import { PlantillaComponent } from './plantilla/plantilla.component';
 import {AutenticacionService} from './servicios/autenticacion.service';
 import {HttpModule} from '@angular/http';
 import {EnviosService} from './servicios/envios.service';
+import { UsuariosService } from './servicios/usuarios.service';
 
 const routes: Routes = [
   {path: '', component: LoginuserComponent},
@@ -79,7 +80,7 @@ const routes: Routes = [
     HttpModule
     
   ],
-  providers: [AutenticacionService, ConfirmationService, EnviosService],
+  providers: [AutenticacionService, ConfirmationService, EnviosService, UsuariosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
