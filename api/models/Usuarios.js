@@ -5,7 +5,10 @@ var Usuarios={
 
 addUsuarios:function(Usuarios,callback){
     console.log("inside service");
-return db.query("Insert into usuarios values(?,?,?)",[Usuarios.tipo_usuario,Usuarios.nombre,Usuarios.contraseña],callback);
+return db.query("Insert into usuario values(?,?,?,?,?,?,?)",[Usuarios.null,Usuarios.null,Usuarios.nombre,Usuarios.hoy,Usuarios.contraseña,Usuarios.email,'adga5gsdrgdsg'],callback);
 },
+getUserName:function(callback){
+            return db.query("select * from usuario",callback);
+}
 }
 module.exports=Usuarios;

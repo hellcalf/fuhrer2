@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { AutenticacionService } from './../servicios/autenticacion.service';
+import { UsuariosService } from './../servicios/usuarios.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import {FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
@@ -13,11 +14,24 @@ export class LoginuserComponent implements OnInit {
   loginForm : FormGroup;
   userdata: any;
   mensaje: any;
+  usuarios: any[] = [];
 
+    
   constructor(private formBuilder: FormBuilder,
   private autService: AutenticacionService,
   private router: Router,
-  private activatedRouter: ActivatedRoute) { }
+  private activatedRouter: ActivatedRoute,
+  public usuariosService : UsuariosService ) {
+    this.usuariosService.getUserName()
+    .subscribe(usuarios =>{
+      for (const id_usuario$ in usuarios){
+        const p = usuarios[id_usuario$];
+        p.id_usuario$ = id_usuario$;
+        this.usuarios.push(usuarios[id_usuario$]);
+        console.log(usuarios);
+      }
+    })
+   }
 
   ngOnInit() {
     this.loginForm= this.formBuilder.group({
@@ -31,7 +45,7 @@ export class LoginuserComponent implements OnInit {
       ]]
     });
   }
-
+ 
   onSubmit(){
     this.userdata = this.saveUserdata();
     this.autService.inicioSesion(this.userdata);

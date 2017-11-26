@@ -7,7 +7,9 @@ var bodyParser = require('body-parser');
 var cors=require('cors');
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var Usuarios= require('./routes/Usuarios');
 var Tasks=require('./routes/Tasks');
+var Borradores=require('./routes/Borradores');
 var Students=require('./routes/Students');
 var app = express();
 // view engine setup
@@ -29,6 +31,8 @@ So now, you can use http://localhost:5000/resources/myImage.jpg to serve all the
 app.use('/', routes);
 app.use('/users', users);
 app.use('/Tasks',Tasks);
+app.use('/Borradores',Borradores)
+app.use('/Usuarios',Usuarios);
 app.use('/Students',Students);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

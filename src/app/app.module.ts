@@ -19,6 +19,8 @@ import {AutenticacionService} from './servicios/autenticacion.service';
 import {HttpModule} from '@angular/http';
 import {EnviosService} from './servicios/envios.service';
 import { UsuariosService } from './servicios/usuarios.service';
+import { EnviarService } from './servicios/enviar.service';
+import { BorradorComponent } from './borrador/borrador.component';
 
 const routes: Routes = [
   {path: '', component: LoginuserComponent},
@@ -44,6 +46,10 @@ const routes: Routes = [
   {
     path: 'plantillas',
     component: PlantillaComponent
+  },
+  {
+    path: 'borradores',
+    component: BorradorComponent
   }
   ]
 
@@ -60,7 +66,8 @@ const routes: Routes = [
     RegistraruserComponent,
     BandejaComponent,
     RegistroComponent,
-    PlantillaComponent
+    PlantillaComponent,
+    BorradorComponent
     
   ],
   imports: [
@@ -80,7 +87,7 @@ const routes: Routes = [
     HttpModule
     
   ],
-  providers: [AutenticacionService, ConfirmationService, EnviosService, UsuariosService],
+  providers: [AutenticacionService, ConfirmationService, EnviosService, UsuariosService, EnviarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

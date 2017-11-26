@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AutenticacionService } from '.././servicios/autenticacion.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { UsuariosService } from '.././servicios/usuarios.service';
 
 @Component({
   selector: 'app-registro',
@@ -12,10 +13,14 @@ export class RegistroComponent implements OnInit {
   
   registroForm: FormGroup;
   userdata: any;
+  usuarios: any;
+  hoy: any;
+
   constructor(private formBuilder: FormBuilder,
   private autService: AutenticacionService,
   private router: Router,
-  private activatedRouter: ActivatedRoute
+  private activatedRouter: ActivatedRoute,
+  private usuarioService: UsuariosService,
   ) { }
 
   ngOnInit() {
@@ -27,16 +32,21 @@ export class RegistroComponent implements OnInit {
       'password':['',[
         Validators.required,
         Validators.minLength(6)
-      ]]
+      ]],
+      'name':['']
     });
     this.registroForm.valueChanges.subscribe(data => this.onValueChanged(data));
     this.onValueChanged();
   }
 
   onSubmit(){
+    this.usuarios=this.saveUsuario();
+    this.usuarioService.postUsuarios(this.usuarios)
+    .subscribe(newusuario =>{})
     this.userdata=this.saveUserdata();
     this.autService.registroUsuario(this.userdata);
     this.router.navigate(['./administrador'])
+    
   }
   saveUserdata(){
     const saveUserdata ={
@@ -44,8 +54,18 @@ export class RegistroComponent implements OnInit {
       password: this.registroForm.get('password').value,
     };
     return saveUserdata;
-  
   } 
+  saveUsuario(){
+    const saveUsuario={
+      nombre: this.registroForm.get('name').value,
+      email: this.registroForm.get('email').value,
+      contraseña: this.registroForm.get('password').value,
+      hoy: new Date (),
+    };
+    return saveUsuario;
+  }
+
+
   onValueChanged(data?:any){
     if (!this.registroForm){return;}
     const form = this.registroForm;

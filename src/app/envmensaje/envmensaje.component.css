@@ -4,7 +4,7 @@
 }
 
 .color-btn{
-    background-color: rgb(36, 184, 243);
+    
     color:white;
     border: none;
     position: relative;
@@ -23,7 +23,7 @@ modalposition{
     margin-left: -15px !important;
 }
 .color-btn:hover {
-	background-color: rgb(92, 156, 151);
+	background-color: rgba(250, 8, 8, 0.986);
 	border-color: black;
    }
 .color-btn1{
@@ -35,7 +35,7 @@ modalposition{
     margin-left: 10px;
 }
 .color-btn1:hover {
-	background-color: rgb(92, 156, 151);
+	background-color: rgb(62, 144, 211);
 	border-color: black;
    }
 .color-btn1:active {

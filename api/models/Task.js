@@ -4,33 +4,17 @@ var Envio={
 
 getAllEnvios:function(callback){
 
-return db.query("Select * from envios",callback);
+return db.query("Select * from envios where id_status=0",callback);
 
 },
-getEnviosById:function(id,callback){
-
-    return db.query("select * from envios where id_envios=?",[id],callback);
+postEnvio:function(envio,callback){
+    console.log("inside service");
+return db.query("Insert into envios values(?,?,?,?,?,?,?,?)",[envio.null,envio.destinatario,0002,envio.asunto,envio.hoy,envio.null,envio.texto,0],callback);
 },
-//addTask:function(Task,callback){
-   //console.log("inside service");
-   //console.log(Task.Id);
-//return db.query("Insert into task values(?,?,?)",[Task.Id,Task.Title,Task.Status],callback);
-//return db.query("insert into task(Id,Title,Status) values(?,?,?)",[Task1.Id,Task1.Title,Task1.Status],callback);
-//},
+
 deleteEnvio:function(id,callback){
     return db.query("delete from envios where id_envios?",[id],callback);
-},
-//updateTask:function(id,Task,callback){
-  //  return  db.query("update task set Title=?,Status=? where Id=?",[Task.Title,Task.Status,id],callback);
-//},
-//deleteAll:function(item,callback){
+}
 
-//var delarr=[];
-  // for(i=0;i<item.length;i++){
-
-    //   delarr[i]=item[i].Id;
-  // }
-  // return db.query("delete from task where Id in (?)",[delarr],callback);
-//}
 };
 module.exports=Envio;

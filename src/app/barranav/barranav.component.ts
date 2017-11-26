@@ -4,6 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import {FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-barranav',
   templateUrl: './barranav.component.html',
@@ -27,4 +28,5 @@ export class BarranavComponent implements OnInit {
     this.autService.logout();
     this.router.navigate([''])
   }
+  
 }
